@@ -1,10 +1,87 @@
-.venv/
+# =========================
+# Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.so
 
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
 .env
+.env.*
 
-data/raw/*
-data/processed/*
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
 
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Type checking / Linters
+# =========================
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Operating systems
+# =========================
+.DS_Store
+Thumbs.db
+*~
+
+# =========================
+# Logs
+# =========================
 logs/
+*.log
+
+# =========================
+# Airflow
+# =========================
+airflow/logs/
+airflow/airflow.db
+
+# =========================
+# Spark
+# =========================
+spark-warehouse/
+metastore_db/
+
+# =========================
+# MinIO / S3 local storage
+# =========================
+minio_data/
+
+# =========================
+# Generated datasets
+# =========================
+data/**/*.csv
+data/**/*.json
+data/**/*.parquet
+
+# Keep directory structure
+!data/**/.gitkeep
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.bak
